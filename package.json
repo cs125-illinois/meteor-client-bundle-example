@@ -1,0 +1,26 @@
+{
+  "name": "meteor-client-bundle-example",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "create-react-class": "^15.5.1",
+    "http-server": "^0.10.0",
+    "meteor-client-bundler": "^0.3.0",
+    "meteor-node-stubs": "^0.3.2",
+    "react": "^15.6.2",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^15.4.2",
+    "react-meteor-data": "^0.2.11",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1"
+  },
+  "scripts": {
+    "bundle": "meteor-client bundle -s server -d client/meteor-client.js",
+    "webpack": "webpack",
+    "meteor": "cd server && meteor run",
+    "static": "http-server dist/"
+  }
+}
