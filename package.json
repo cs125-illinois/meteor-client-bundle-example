@@ -1,6 +1,7 @@
 {
   "name": "meteor-client-bundle-example",
   "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -10,10 +11,10 @@
     "http-server": "^0.10.0",
     "meteor-client-bundler": "^0.3.0",
     "meteor-node-stubs": "^0.3.2",
-    "react": "^15.6.2",
+    "react": "^16.4.2",
     "react-addons-pure-render-mixin": "^15.6.2",
-    "react-dom": "^15.4.2",
-    "react-meteor-data": "^0.2.11",
+    "react-dom": "^16.4.2",
+    "react-meteor-data-with-tracker": "^0.1.2",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "webpack": "^3.9.1"
   },
