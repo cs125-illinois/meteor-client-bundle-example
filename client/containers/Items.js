@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createContainer } from 'react-meteor-data'
+import { withTracker } from 'react-meteor-data-with-tracker'
 
 import { Items } from '../../server/imports/items.js'
 
@@ -15,8 +15,8 @@ class App extends Component {
   }
 }
 
-export default createContainer(() => {
+export default withTracker(() => {
   return {
     items: Items.find({}).fetch()
-  }
-}, App)
+  };
+})(App);
